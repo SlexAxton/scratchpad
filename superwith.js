@@ -1,3 +1,13 @@
+// Superwith takes a nested object and uses eval
+// to iterate through the entire object and use the
+// `with` statement on every single level of every
+// property. Then it runs your function inside of
+// that.
+//
+// superwith(nested object, function to run)
+// returns the function for you to call at your leisure
+// or to run back through the superwith function
+
 function superwith (obj, fn, _objstack, _notfirst) {
   _objstack = _objstack || [obj];
   for (var i in obj) {
