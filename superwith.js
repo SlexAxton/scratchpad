@@ -8,6 +8,8 @@
 // returns the function for you to call at your leisure
 // or to run back through the superwith function
 
+// example: http://jsbin.com/eyonot/3
+
 function superwith (obj, fn, _objstack, _notfirst) {
   _objstack = _objstack || [obj];
   for (var i in obj) {
